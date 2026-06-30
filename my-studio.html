@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seventy 4 Productions — Films</title>
+  <title>Seventy 4</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -11,7 +11,7 @@
       padding: 0;
       box-sizing: border-box;
       font-family: Poppins, sans-serif;
-    }
+    }sca
 
     html {
       scroll-behavior: smooth;
@@ -186,7 +186,6 @@
       font-weight: 600;
       cursor: pointer;
       text-decoration: none;
-      margin-top: 1.25rem;
       transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
       animation: fadeUp 0.85s ease 0.1s both;
     }
@@ -200,21 +199,19 @@
 
     @media (max-width: 720px) {
       nav {
-        position: sticky;
-        top: 12px;
+        position: static;
         transform: none;
         inset: auto;
         width: min(100%, 1100px);
-        margin: 12px auto 0;
+        margin: 16px auto 0;
         padding: 16px 18px;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
         border-radius: 18px;
       }
 
       .logo {
         font-size: 1.15rem;
-        text-align: center;
       }
 
       .links {
@@ -231,7 +228,7 @@
       }
 
       main {
-        padding-top: 24px;
+        padding-top: 28px;
       }
 
       .hero h1 {
@@ -245,43 +242,32 @@
     <div class="logo">Seventy 4</div>
     <div class="links">
       <a href="index.html">Home</a>
-      <a class="active" href="films.html">About Me</a>
+      <a href="films.html">About Me</a>
       <a href="games.html">My Work</a>
-      <a href="my-studio.html">My Studio</a>
+      <a class="active" href="my-studio.html">My Studio</a>
     </div>
   </nav>
 
   <main>
     <section class="hero">
-      <h1>About <span>Me!</span></h1>
+      <h1>Seventy 4 <span>Productions</span></h1>
     </section>
 
     <section>
-      <h2 class="section-title">My Passions</h2>
+      <h2 class="section-title">Featured Creations</h2>
       <div class="grid">
-        <a class="card">
-          <h2>Flight</h2>
-          <p>I am working on my Private Pilots License.</p>
-          <p>I started flying in 2023 and I have loved it ever since.</p>
+        <a class="card" aria-label="View Don't Seek game details">
+          <h2>What is this?</h2>
+          <p>This is Seventy 4 Productions!</p>
+          <p>A small studio for Game Development</p>
         </a>
       </div>
       <div class="grid">
-        <div class="card">
-          <h2>Animations</h2>
-          <p>I have a huge attention for detail so I have always loved creating animations to express my creativity.</p>
-          <p>I started animation when I was young on Mine-Imator and then quickly moved to blender.</p>
-          <!-- <p>If you would like to buy an animation from me go to this page.</p>  -->
-          <!-- <a class="button" href="https://example.com" target="_blank" rel="noopener noreferrer">Buy Animation</a>  -->
-        </div>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h2>Game Development</h2>
-          <p>As someone who has worked with a lot of coding languages ranging from visual scripting (Unreal, Scratch, etc.) then to actual type laguages like Python and then all  the way to more complex laguages like HTML, C#, and C++.</p>
-          <p>I have used these to create mostly Virtual Reality games for various purposes.</p>
-          
-          <a class="button" href="dont-seek.html">View Dont Seek</a>
-        </div>
+        <a class="card" aria-label="View Don't Seek game details">
+          <h2>What do we do?</h2>
+          <p>Like I said above we make games!</p>
+          <p>We create immersive experiences for VR platforms. We plan to creates games to bring you enjoyment and more!</p>
+        </a>
       </div>
     </section>
   </main>
