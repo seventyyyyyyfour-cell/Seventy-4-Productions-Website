@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delirium — Seventy 4 Productions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Poppins, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { min-height: 100vh; background: radial-gradient(circle at top, rgba(0, 115, 255, 0.24), transparent 35%), #090b10; color: #f2f4f8; overflow-x: hidden; }
+    nav { position: fixed; inset: 20px auto auto 50%; transform: translateX(-50%); width: min(92%, 1100px); background: rgba(19, 22, 28, 0.95); border: 1px solid rgba(45, 51, 59, 0.95); border-radius: 20px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0 28px; min-height: 72px; box-shadow: 0 24px 70px rgba(36, 24, 24, 0.32); z-index: 10; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .logo { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.03em; color: #58a6ff; }
+    .links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .links a { appearance: none; background: transparent; border: 1px solid transparent; color: #cdd9e5; padding: 0.85rem 1.15rem; font-size: 0.95rem; font-weight: 500; border-radius: 14px; cursor: pointer; text-decoration: none; transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease; }
+    .links a:hover, .links a:focus-visible { background: rgba(33, 38, 45, 0.9); color: #ffffff; outline: none; }
+    .links a.active { background: #1f6feb; border-color: rgba(31, 111, 235, 0.4); color: #ffffff; }
+    main { max-width: 1120px; margin: 0 auto; padding: 130px 24px 48px; }
+    .hero { display: grid; gap: 1.5rem; padding: 2rem 0 1rem; }
+    .hero h1 { font-size: clamp(2.75rem, 4vw, 4.5rem); line-height: 1.05; max-width: 12ch; letter-spacing: -0.05em; animation: fadeUp 0.8s ease both; }
+    .hero span { color: #58a6ff; }
+    .hero p { max-width: 720px; color: #b6c5d8; line-height: 1.85; font-size: 1.05rem; animation: fadeUp 0.9s ease 0.15s both; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.25rem; animation: fadeUp 0.95s ease 0.2s both; }
+    .hero-actions .button.secondary { background: transparent; border: 1px solid rgba(88, 166, 255, 0.45); box-shadow: none; }
+    .hero-actions .button.secondary:hover, .hero-actions .button.secondary:focus-visible { background: rgba(88, 166, 255, 0.12); box-shadow: none; }
+    .detail-grid { display: grid; gap: 1.5rem; margin-top: 2rem; }
+    .detail-card { background: rgba(22, 27, 34, 0.95); border: 1px solid rgba(45, 51, 59, 0.95); border-radius: 22px; padding: 26px; animation: fadeUp 0.9s ease both; }
+    .detail-card:nth-child(2) { animation-delay: 0.2s; }
+    .detail-card:nth-child(3) { animation-delay: 0.3s; }
+    .detail-card h2 { margin-bottom: 0.85rem; font-size: 1.25rem; }
+    .detail-card p { color: #c0cbd9; line-height: 1.8; font-size: 1rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; appearance: none; background: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%); color: #ffffff; border: none; padding: 0.95rem 1.7rem; border-radius: 14px; font-size: 1rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; animation: fadeUp 0.85s ease 0.1s both; }
+    .button:hover, .button:focus-visible { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(31, 111, 235, 0.24); outline: none; }
+    @media (max-width: 720px) { nav { position: static; transform: none; inset: auto; width: min(100%, 1100px); margin: 16px auto 0; padding: 16px 18px; flex-direction: column; align-items: flex-start; border-radius: 18px; } .logo { font-size: 1.15rem; } .links { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; } .links a { padding: 0.8rem 0.9rem; text-align: center; border-radius: 12px; } main { padding-top: 28px; } .hero h1 { max-width: none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Seventy 4 Productions</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a class="active" href="films.html">Films</a>
+      <a href="games.html">Games</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Delirium</h1>
+      <p>An Orion Drift short film that explores memory, time, and the unexpected path home.</p>
+      <div class="hero-actions">
+        <!-- Watch now button -->
+        <a class="button" href="#">Coming soon!</a>
+        <a class="button secondary" href="https://youtu.be/EI_SPbTXEOM?si=HJD7Sb3ylCu2nqaK" target="_blank" rel="noopener noreferrer">Play Trailer</a>
+      </div>
+      <a class="button" href="films.html">Back to Films</a>
+    </section>
+
+    <section class="detail-grid">
+      <div class="detail-card">
+        <h2>Synopsis</h2>
+        <p>Find out soon!</p>
+      </div>
+      <div class="detail-card">
+        <h2>Genre</h2>
+        <p>Science fiction / Mystery</p>
+      </div>
+      <div class="detail-card">
+        <h2>Runtime</h2>
+        <p>N/A</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
